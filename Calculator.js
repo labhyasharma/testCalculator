@@ -31,6 +31,20 @@ export const handleEqual = state => {
     };
   }
 
+  if (operator === "*") {
+    return {
+      currentValue: previous * current,
+      ...resetState
+    }
+  }
+
+  if (operator === "+") {
+    return {
+      currentValue: previous + current,
+      ...resetState
+    }
+  }
+
  // Need to add code
 
   if (operator === "-") {
