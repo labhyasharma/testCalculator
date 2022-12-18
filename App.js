@@ -1,7 +1,7 @@
-// Need to add import
+import React from "react"
 import { StyleSheet, Text, View, StatusBar, SafeAreaView } from "react-native";
 
-// Need to add import
+import Row from "./components/Row"
 import Button from "./components/Button";
 import calculator, { initialState } from "./utils/Calculator";
 
@@ -59,7 +59,7 @@ export default class App extends React.Component {
           </Row>
 
           <Row>
-            // Need to code
+            <Button text="7" onPress={() => this.handleTap("number", 7)} />
             <Button text="8" onPress={() => this.handleTap("number", 8)} />
             <Button text="9" onPress={() => this.handleTap("number", 9)} />
             <Button
@@ -70,7 +70,7 @@ export default class App extends React.Component {
           </Row>
 
           <Row>
-           //Need to add code
+            <Button text="4" onPress={() => this.handleTap("number", 4)} />
             <Button text="5" onPress={() => this.handleTap("number", 5)} />
             <Button text="6" onPress={() => this.handleTap("number", 6)} />
             <Button
@@ -81,7 +81,8 @@ export default class App extends React.Component {
           </Row>
 
           <Row>
-           //Need to add code
+            <Button text="1" onPress={() => this.handleTap("number", 1)} />
+            <Button text="2" onPress={() => this.handleTap("number", 2)} />
             <Button text="3" onPress={() => this.handleTap("number", 3)} />
             <Button
               text="+"
